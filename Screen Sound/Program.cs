@@ -4,7 +4,8 @@ using System.Net.Mime;
 string mensagemDeBoasVindas = "Boas Vindas ao Screen Sound";
 
 //Pascal Case - nome de funções primeira letra da palavra em maiusculo
-void ExibirMensagemDeBoasVindas() {
+void ExibirLogo() 
+{
     Console.WriteLine(@"
 ░██████╗░█████╗░██████╗░███████╗███████╗███╗░░██╗  ░██████╗░█████╗░██╗░░░██╗███╗░░██╗██████╗░
 ██╔════╝██╔══██╗██╔══██╗██╔════╝██╔════╝████╗░██║  ██╔════╝██╔══██╗██║░░░██║████╗░██║██╔══██╗
@@ -18,6 +19,7 @@ void ExibirMensagemDeBoasVindas() {
 
 void ExibirOpcoesDoMenu()
 {
+    ExibirLogo();
     Console.WriteLine("\nDigite 1 para registrar uma banda");
     Console.WriteLine("Digite 2 para mostrar todas as bandas");
     Console.WriteLine("Digite 3 para avaliar uma banda");
@@ -56,5 +58,4 @@ void RegistrarBanda()
     ExibirOpcoesDoMenu();
 }
 
-ExibirMensagemDeBoasVindas();
 ExibirOpcoesDoMenu();
