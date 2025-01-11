@@ -2,6 +2,7 @@
 using System.Net.Mime;
 
 string mensagemDeBoasVindas = "Boas Vindas ao Screen Sound";
+List<string> listaDasBandas= new List<string>();
 
 //Pascal Case - nome de funções primeira letra da palavra em maiusculo
 void ExibirLogo() 
@@ -52,6 +53,7 @@ void RegistrarBanda()
     Console.WriteLine("Registro de Bandas");
     Console.Write("Digite o nome da banda que deseja registrar: ");
     string nomeBanda = Console.ReadLine()!;
+    listaDasBandas.Add(nomeBanda);
     Console.WriteLine($"A banda {nomeBanda} foi registrada com sucesso");
     Thread.Sleep(2000);
     Console.Clear();
